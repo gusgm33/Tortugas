@@ -12,19 +12,32 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun radiobuttonClick(view:View){
+    fun radiobuttonClick(view:View) {
 
-        if(view == rb_leo){
+        if (view == rb_leo) {
 
             tortuga.setImageResource(R.drawable.tmntleo)
 
 
+        } else {
+            if (view == rb_don) {
+
+                tortuga.setImageResource(R.drawable.tmntdon)
+
+            } else {
+                if (view == rb_rafa) {
+
+
+                    tortuga.setImageResource(R.drawable.tmntraph)
+
+
+                } else {
+                    tortuga.setImageResource(R.drawable.tmntmike)
+                }
+
+            }
         }
 
 
-
     }
-
-
-
 }
